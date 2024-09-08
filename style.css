@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: #FFFF00; /* Amarelo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.atari-console {
+  width: 400px;
+  height: 250px;
+  background-color: #775c11;
+  border: 2px solid gray;
+  position: relative; /* Allows positioning elements within itself */
+}
+
+.screen {
+  
+  height: 60%;
+  /* Removed background-color */
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative; /* Allows positioning power light inside */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+.screen pre {
+  margin: 0; /* Removes default margin for pre tag */
+  font-family: monospace; /* Uses monospace font for a more retro look */
+}
+
+.power-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+
+.joystick {
+    position: relative; /* Permite posicionar os botões em relação ao joystick */
+  }
+  
+  .button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightgray;
+  }
+  
+  .button.up {
+    top: -25px; /* Ajusta a posição para cima */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .button.down {
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .button.left {
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, 0%);
+  }
+  
+  .button.right {
+    top: 50%;
+    left: 44%;
+    transform: translate(147%, 0%);
+  }
+  
+  .button.fire {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }

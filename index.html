@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tributo ao Console Atari Simulado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Nostalgia dos Anos 80 (Atari)</h1>
+  </header>
+  <main>
+
+    <section>
+      <input type="text" id="campoNome" placeholder="Digite seu nome">
+      <button onclick="clickNome()" id="BotaoNome">Enviar</button>
+    </section>
+
+    <section>
+      <div class="atari-console">
+
+        <div class="screen">
+          <section class="tela-atari" id="tela-atari">
+
+
+          </section>  
+        </div>
+
+
+        <div class="buttons">
+          <button onclick="clickA()">A</button>
+          <button onclick="clickB()">B</button>
+        </div>
+
+        <div class="joystick">
+            <div onclick="clickUp()" class="button up"></div>
+            <div onclick="clickDown()" class="button down"></div>
+            <div onclick="clickLeft()" class="button left"></div>
+            <div onclick="clickRight()" class="button right"></div>
+            <div onclick="clickFire()" class="button   
+           fire"></div>
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="funcoes.js"></script>
+</body>
+</html>
